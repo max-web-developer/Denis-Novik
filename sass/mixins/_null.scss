@@ -1,11 +1,13 @@
 $white: #ffffff;
-$black: #000000;
+$black:#070707;
+$grey:#828282;
 
 
 // ? Обнуление элементов
 html {
     scroll-behavior: smooth;
     max-width: 100%;
+    font-family: "Gilroy-Bold";
 }
 
 ul,
