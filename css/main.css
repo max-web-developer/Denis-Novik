@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+}
+
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+p {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  font-weight: 400;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 950pxpx;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*# sourceMappingURL=main.css.map */
