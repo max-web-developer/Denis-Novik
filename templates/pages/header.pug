@@ -1,0 +1,16 @@
+include ./navbar
+mixin header()
+    header
+        .container 
+            .header 
+                -
+                 var nav_list=[{
+                     "Home":"./main.html",
+                     "About me":"#about",
+                     "Skills":"#skills",
+                     "Portfolio":"#portfolio",
+                     "Contacts":"#footer",
+                 }]
+                +nav(nav_list)
+
+
