@@ -1,0 +1,32 @@
+include ./navbar
+mixin header()
+    header
+        .container 
+            .header 
+                -
+                 var nav_list=[{
+                     Home:"./main.html"},
+                     {
+                     About_me:"#about"},
+                     {
+                     Skills:"#skills"},
+                     {
+                     Portfolio:"#portfolio"},
+                     {
+                     Contacts:"#footer",
+                 }]
+                +nav(nav_list)
+                .header__title 
+                    .header__name 
+                        h1 Denis Novik
+                    .header__job 
+                        | UX | UI designer<br>24 years old, Minsk
+                    .header_lang 
+                        input(type="radio" id="ru" name="russain language" value="RU")
+                        label(for="ru") RU 
+                        input(type="radio" id="eng" name="english language" value="ENG" checked)
+                        label(for="ru") ENG 
+                    .header_imagage     
+                        img(src="../assets/images/full_novik.png", alt="novik" )
+
+

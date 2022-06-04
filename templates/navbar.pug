@@ -1,0 +1,10 @@
+mixin nav(nav_list)
+    nav 
+        .container 
+            .nav 
+                //- |yivybhjhuibui;ubobbbbbb
+                ul
+                    each list_item in nav_list
+                        li= list_item
+                            each link_name, link in list_item
+                                a(href= list_name)= list_name 
