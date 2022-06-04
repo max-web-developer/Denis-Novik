@@ -3,7 +3,23 @@ $black:#070707;
 $grey:#828282;
 
 
+$minWidth: 28.125rem;
+$maxWidth: 120rem;
+$maxWidthContainer:59rem;
+
 // ? Обнуление элементов
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
 html {
     scroll-behavior: smooth;
     max-width: 100%;
@@ -37,27 +53,7 @@ button {
     cursor: pointer;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Roboto, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: $white;
-    background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
-    background-repeat: no-repeat;
-}
-
-// ? Обнуление элементов 
-
-$minWidth: 450px;
-$maxWidth: 1920px;
-$maxWidthContainer:950px;
-
 .container {
     max-width: $maxWidthContainer + px;
     margin: 0 auto;
-    padding: 0 15px;
 }

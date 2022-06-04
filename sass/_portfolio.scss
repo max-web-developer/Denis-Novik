@@ -1,0 +1,29 @@
+.portfolio{
+    background-color: #DCDCDC;
+    padding-top: 14rem;
+    &__wrapper{ 
+        padding-bottom: 6rem; 
+    }
+    &__title{
+        @include title;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    &-image{
+        width: 100%;
+    }
+    &__project{
+        text-align: center;
+        margin-bottom: 6rem;
+        &-img{
+            max-width: 950px;
+            margin: 0 auto; 
+        }
+        &-link{
+            @include text;
+            margin-top: 2.75rem;
+            text-decoration: underline;
+        }
+    }
+}
