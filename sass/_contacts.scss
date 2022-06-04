@@ -1,0 +1,45 @@
+.contact{
+    &__wrapper{
+        margin-top: 7rem;
+        margin-bottom: 7.6rem;
+    }
+    &__title{
+        @include title;
+        font-weight: 600;
+        text-align: center; 
+    }
+    &__subtitle{
+        @include text;
+        padding-top: 1.8rem;
+        max-width: 17rem;
+        margin: 0 auto;
+    }
+    &__button{
+        margin:auto;
+        max-width: 12.5rem;
+    }
+    .btn{
+        @include text;
+        margin-top: 1.3rem;
+        font-weight: 600;
+        border: 0;
+        padding: 13px 30px;
+        border-radius:30px ;
+        background-color: $black;
+        color: $white;
+    }
+    &__icons{
+        display: flex;
+        justify-content: space-between;
+        max-width: 19rem;
+        padding-top: 5.3rem;
+        margin: 0 auto;
+    }
+    &__link{
+        @include text;
+        color: $grey;
+        max-width: 15rem;
+        margin: 0 auto;
+        margin-top: 2.8rem;
+    }
+}

@@ -1,6 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+}
+
 html {
   scroll-behavior: smooth;
   max-width: 100%;
+  font-family: "Gilroy-Bold";
 }
 
 ul,
@@ -30,6 +42,11 @@ button {
   cursor: pointer;
 }
 
+.container {
+  max-width: 59rempx;
+  margin: 0 auto;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -38,15 +55,218 @@ body {
   font-family: Roboto, sans-serif;
   margin: 0;
   padding: 0;
-  color: #ffffff;
-  background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
   background-repeat: no-repeat;
 }
 
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  font-family: "Gilroy-Bold";
+}
+
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+p {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  font-weight: 400;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .container {
-  max-width: 950pxpx;
+  max-width: 59rempx;
   margin: 0 auto;
-  padding: 0 15px;
+}
+
+.about {
+  background-color: #DCDCDC;
+  padding-top: 14rem;
+}
+.about__wrapper {
+  height: 506px;
+}
+.about__title {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color: #070707;
+  font-weight: 600;
+  text-align: center;
+}
+.about__text {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+.about__text-text {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+  padding-top: 1.8rem;
+}
+
+.skill__wrapper {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.skill__title {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color: #070707;
+  font-weight: 600;
+  text-align: center;
+}
+.skill__subtitle {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+  margin-top: 70px;
+  font-weight: 400;
+}
+.skill__cards {
+  display: flex;
+  justify-content: space-between;
+  max-width: 950px;
+  margin: 0 auto;
+}
+.skill__card {
+  margin-top: 5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.skill__card-title {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  font-weight: 600;
+  color: #828282;
+  max-width: 5.3rem;
+  padding-top: 1.26rem;
+}
+.skill__card-rating {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  width: 9.7rem;
+}
+
+@media (max-width: 750px) {
+  .skill__cards {
+    flex-direction: column;
+  }
+}
+.portfolio {
+  background-color: #DCDCDC;
+  padding-top: 14rem;
+}
+.portfolio__wrapper {
+  padding-bottom: 6rem;
+}
+.portfolio__title {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color: #070707;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.portfolio-image {
+  width: 100%;
+}
+.portfolio__project {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+.portfolio__project-img {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.portfolio__project-link {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+  margin-top: 2.75rem;
+  text-decoration: underline;
+}
+
+.contact__wrapper {
+  margin-top: 7rem;
+  margin-bottom: 7.6rem;
+}
+.contact__title {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color: #070707;
+  font-weight: 600;
+  text-align: center;
+}
+.contact__subtitle {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+  padding-top: 1.8rem;
+  max-width: 17rem;
+  margin: 0 auto;
+}
+.contact__button {
+  margin: auto;
+  max-width: 12.5rem;
+}
+.contact .btn {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+  margin-top: 1.3rem;
+  font-weight: 600;
+  border: 0;
+  padding: 13px 30px;
+  border-radius: 30px;
+  background-color: #070707;
+  color: #ffffff;
+}
+.contact__icons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 19rem;
+  padding-top: 5.3rem;
+  margin: 0 auto;
+}
+.contact__link {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+  color: #828282;
+  max-width: 15rem;
+  margin: 0 auto;
+  margin-top: 2.8rem;
 }
 
 /*# sourceMappingURL=main.css.map */

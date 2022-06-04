@@ -1,0 +1,21 @@
+@mixin title {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: $black;
+}
+
+@mixin text {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $black;
+}
+
+@mixin item{
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    font-weight: 600;
+    color: #828282;
+}
