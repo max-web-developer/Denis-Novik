@@ -1,6 +1,8 @@
 @import './mixins/null';
-.about {
+#about{
     background-color: #DCDCDC;
+}
+.about {
     padding-top: 14rem;
     &__wrapper{
         

@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/css/main.css">
     <title>Document</title>
   </head>
-<<<<<<< HEAD
   <body> 
     <header>
       <div class="container"> 
@@ -16,52 +15,52 @@
             <div class="container"> 
               <div class="nav"> 
                 <ul>
-                  <li>[object Object]<a></a>
-                  </li>
-                  <li>[object Object]<a></a>
-                  </li>
-                  <li>[object Object]<a></a>
-                  </li>
-                  <li>[object Object]<a></a>
-                  </li>
-                  <li>[object Object]<a></a>
-                  </li>
+                  <li><a class="active" href="./main.html">Home</a></li>
+                  <li><a href="#about">About me</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#footer">Contacts</a></li>
                 </ul>
               </div>
             </div>
           </nav>
           <div class="header__title"> 
-            <div class="header__name"> 
-              <h1>Denis Novik</h1>
+            <div class="header__content">
+              <div class="header__name"> 
+                <h2>Denis<br> Novik</h2>
+              </div>
+              <div class="header__job">
+                 UX | UI designer<br>24 years old, Minsk</div>
+              <div class="header__lang"> 
+                <label class="container">
+                  <input type="radio" name="lang" id="ru"/><span class="checkmark">
+                     RU</span>
+                </label>
+                <label class="container">
+                  <input type="radio" name="lang" id="eng" checked="checked"/><span class="checkmark">ENG</span>
+                </label>
+              </div>
             </div>
-            <div class="header__job">
-               UX | UI designer<br>24 years old, Minsk</div>
-            <div class="header_lang"> 
-              <input type="radio" id="ru" name="russain language" value="RU"/>
-              <label for="ru">RU </label>
-              <input type="radio" id="eng" name="english language" value="ENG" checked="checked"/>
-              <label for="ru">ENG </label>
-            </div>
-            <div class="header_imagage">    <img src="../assets/images/full_novik.png" alt="novik"/></div>
+            <div class="header__image">    <img src="../assets/images/full_novik.png" alt="novik"/></div>
           </div>
         </div>
       </div>
     </header>
-  </body>
-=======
-  <body> </body>
-  <div class="container">
-    <div class="about"> 
-      <div class="about__wrapper"> 
-        <div class="about__title title">About me</div>
-        <div class="about__text text">
-          <p class="about__text-text">Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
-          <p class="about__text-text">I'm studying at courses "Web and mobile design interfaces" in IT-Academy.    </p>
-          <p class="about__text-text">Ready to implement excellent projects with wonderful people.</p>
+    <div id="about">
+      <div class="container">
+        <div class="about"> 
+          <div class="about__wrapper"> 
+            <div class="about__title title">About me</div>
+            <div class="about__text text">
+              <p class="about__text-text">Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
+              <p class="about__text-text">I'm studying at courses "Web and mobile design interfaces" in IT-Academy.    </p>
+              <p class="about__text-text">Ready to implement excellent projects with wonderful people.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="skill"> 
+    <div class="skill" id="skills"> 
       <div class="skill__wrapper"> 
         <div class="skill__title">Skills</div>
         <div class="skill__subtitle">I work in such programs as </div>
@@ -113,7 +112,7 @@
         </div>
       </div>
     </div>
-    <div class="portfolio"> 
+    <div class="portfolio" id="portfolio"> 
       <div class="portfolio__wrapper">
         <div class="portfolio__title">Portfolio</div>
         <div class="portfolio__project">
@@ -130,7 +129,7 @@
         </div>
       </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="footer">
       <div class="contact__wrapper"> 
         <div class="contact__title">Contacts</div>
         <div class="contact__subtitle">Want to know more or just chat? You are welcome!    </div>
@@ -146,6 +145,5 @@
         <div class="contact__link"> <a href="">Like me on LinkedIn, Instagram, Behance, Dribble            </a></div>
       </div>
     </div>
-  </div>
->>>>>>> db0b0913075d4afc3c34e7b8ac3f0ffef7266964
+  </body>
 </html>

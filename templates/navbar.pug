@@ -4,7 +4,10 @@ mixin nav(nav_list)
             .nav 
                 //- |yivybhjhuibui;ubobbbbbb
                 ul
-                    each list_item in nav_list
+                    li= list_item
+                            a(href="./main.html" class="active")
+                                |Home
+                    each link in nav_list
+
                         li= list_item
-                            each link_name, link in list_item
-                                a(href= list_name)= list_name 
+                            a(href= link.link)= link.name 

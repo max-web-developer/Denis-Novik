@@ -4,29 +4,41 @@ mixin header()
         .container 
             .header 
                 -
-                 var nav_list=[{
-                     Home:"./main.html"},
-                     {
-                     About_me:"#about"},
-                     {
-                     Skills:"#skills"},
-                     {
-                     Portfolio:"#portfolio"},
-                     {
-                     Contacts:"#footer",
-                 }]
+                    var nav_list=[
+                        {
+                            name:"About me",
+                            link : "#about"
+                            },
+                        {
+                            name:"Skills",
+                            link:"#skills"
+                            },
+                        {
+                            name:"Portfolio",
+                            link:"#portfolio"
+                            },
+                        {
+                            name:"Contacts",
+                            link:"#footer"
+                            }
+                            ]
                 +nav(nav_list)
                 .header__title 
-                    .header__name 
-                        h1 Denis Novik
-                    .header__job 
-                        | UX | UI designer<br>24 years old, Minsk
-                    .header_lang 
-                        input(type="radio" id="ru" name="russain language" value="RU")
-                        label(for="ru") RU 
-                        input(type="radio" id="eng" name="english language" value="ENG" checked)
-                        label(for="ru") ENG 
-                    .header_imagage     
-                        img(src="../assets/images/full_novik.png", alt="novik" )
+                    .header__content
+                        .header__name 
+                            h2 Denis<br> Novik
+                        .header__job 
+                            | UX | UI designer<br>24 years old, Minsk
+                        .header__lang 
+                            label.container
+                                input(type="radio" name="lang" id="ru" )
+                                span.checkmark 
+                                    |RU
+                            label.container
+                                input(type="radio" name="lang" id="eng" checked)
+                                span.checkmark
+                                    |ENG
+                    .header__image     
+                        img(src="../assets/images/full_novik.png" alt="novik" )
 
 
