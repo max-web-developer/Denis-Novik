@@ -1,13 +1,37 @@
 mixin nav(nav_list)
     nav 
         .container 
+            .header__lang 
+                label.container
+                    input(type="radio" name="lang" id="ru" )
+                    span.checkmark 
+                        |RU
+                label.container
             .nav 
-                //- |yivybhjhuibui;ubobbbbbb
                 ul
                     li= list_item
+                        input(type="radio" name="lang" id="eng" checked)
+                        span.checkmark
+                            |ENG
+                    
                             a(href="./main.html" class="active")
+                .header__lang 
+                    label.container
+                        input(type="radio" name="lang" id="ru" )
+                        span.checkmark 
+                            |RU
+                    label.container
+                        input(type="radio" name="lang" id="eng" checked)
+                        span.checkmark
+                            |ENG
+                    
                                 |Home
                     each link in nav_list
-
                         li= list_item
                             a(href= link.link)= link.name 
+    
+                
+            nav__burger 
+                span 
+                span 
+            
