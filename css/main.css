@@ -52,12 +52,17 @@ button {
   display: none;
 }
 
+nav .header__lang {
+  display: none;
+}
+
 @media screen and (max-width: 760px) {
   nav {
     width: 375px;
     height: 812px;
   }
   nav .header__lang {
+    display: block;
     transform: rotate(90deg);
     padding: 0.5rem 0.5rem 0 0.5rem;
   }
@@ -89,9 +94,6 @@ button {
 .nav ul li a.active {
   color: #070707;
 }
-.nav .header__lang {
-  display: none;
-}
 @media screen and (max-width: 760px) {
   .nav {
     display: flex;
@@ -109,6 +111,10 @@ button {
   }
 }
 
+.header {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .header__content {
   margin-top: 2.5rem;
   display: flex;

@@ -2,12 +2,17 @@
 .nav__burger {
     display: none;
 }
-
+nav{
+    .header__lang {
+        display: none;
+    }
+}
 @media screen and(max-width:760px){
      nav{
         width: 375px;
         height: 812px;
         .header__lang{
+            display: block;
             transform: rotate(90deg);
             padding: 0.5rem 0.5rem 0 0.5rem;
             label{
@@ -44,9 +49,7 @@
             }
         }
     }
-    .header__lang {
-        display: none;
-    }
+    
     @media screen and (max-width: 760px) {
         // display: none;
         display: flex;
@@ -70,6 +73,8 @@
 // }
 
 .header {
+    display: flex;
+    flex-direction: column-reverse;
     &__content {
         margin-top: 2.5rem;
         display: flex;
