@@ -52,6 +52,21 @@ button {
   display: none;
 }
 
+@media screen and (max-width: 760px) {
+  nav {
+    width: 375px;
+    height: 812px;
+  }
+  nav .header__lang {
+    transform: rotate(90deg);
+    padding: 0.5rem 0.5rem 0 0.5rem;
+  }
+  nav .header__lang label {
+    width: 321px;
+    height: 689px;
+    margin: auto;
+  }
+}
 .nav {
   border-bottom: 1px solid #828282;
   line-height: 5.5rem;
@@ -77,10 +92,11 @@ button {
 .nav .header__lang {
   display: none;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 760px) {
   .nav {
     display: flex;
     flex-direction: row;
+    border: none;
   }
   .nav ul {
     display: flex;
@@ -100,6 +116,20 @@ button {
   align-items: baseline;
   justify-content: space-between;
 }
+@media screen and (max-width: 760px) {
+  .header__content {
+    flex-direction: column;
+    width: 317px;
+    height: 170px;
+  }
+  .header__content .header__burger {
+    display: block;
+  }
+  .header__content .header__burger span {
+    width: 33px;
+    height: 3.84px;
+  }
+}
 .header__name {
   font-family: "Gilroy-Bold";
   font-size: 47.3392px;
@@ -116,13 +146,13 @@ button {
 .header__lang {
   transform: rotate(-90deg);
 }
-.header__lang .container input {
+.header__lang label input {
   display: none;
 }
-.header__lang .container input:checked ~ .checkmark {
+.header__lang label input:checked ~ .checkmark {
   color: #070707;
 }
-.header__lang .container .checkmark {
+.header__lang label .checkmark {
   color: #828282;
   padding: 0 0.5rem 0.5rem 0.5rem;
 }
@@ -146,6 +176,8 @@ button {
   .header__image {
     height: 43rem;
     max-width: 74rem;
+    display: flex;
+    justify-content: center;
   }
   .header__image img {
     width: 791px;
@@ -156,12 +188,14 @@ button {
 }
 @media screen and (max-width: 760px) {
   .header__image {
-    height: 55rem;
-    max-width: 35rem;
+    width: 316.5px;
+    height: 478px;
+    display: flex;
+    justify-content: center;
   }
   .header__image img {
-    width: current screen width/480;
-    height: current screen height/480;
+    width: 316.5px;
+    height: 478px;
     object-fit: cover;
     transform: translateY(53px);
   }
@@ -170,6 +204,11 @@ button {
   max-height: 8rem;
   min-height: 5rem;
   height: auto;
+}
+@media screen and (max-width: 760px) {
+  .header .header__lang {
+    display: none;
+  }
 }
 
 #eng ~ span {

@@ -22,7 +22,7 @@ mixin header()
                             link:"#footer"
                             }
                             ]
-                +nav(nav_list)
+                
                 .header__title 
                     .header__content
                         .header__name 
@@ -38,11 +38,11 @@ mixin header()
                                 input(type="radio" name="lang" id="eng" checked)
                                 span.checkmark
                                     |ENG
-                    .header__image     
+                .header__image     
                         img(src="../assets/images/full_novik.png" alt="novik" )
-                    .header__design
+                .header__design
                 .header__burger
                     span 
                     span 
                     span 
-
+                +nav(nav_list)
